@@ -41,9 +41,32 @@
     <div class="container-fluid justify-content-center" id="greet">
         <img id="tsuru" src="./assets/images/tsuru.png">
         <h3 id="greet_title">Bem-vindo</h3>
-        <h4 id="greet_text">Utilize as setas para navegar</h4>
+        <h4 id="greet_text">Utilize as setas e o botão abaixo para navegar pelos conteúdos</h4>
+        <button type="button" class="modTrigger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fa-solid fa-circle-exclamation"></i>
+        </button>
     </div>
-
+      
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Habilidades do técnico</h1>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p id="texto_tecnico">
+                    Apesar de ser uma versão básica que planejo alterar no terceiro trimestre para melhor refletir as
+                    habilidades desenvolvidas no terceiro ano, este portfólio ainda é um produto de habilidades
+                    desenvolvidas na grade técnica. O HTML é utilizado para a estruturação básica de elementos, o CSS
+                    para a estilização e o framework Bootstrap para a fácil implementação de certas funcionalidades.
+                    Após a construção do site, o Github é utilizado para o controle de versões e o deployment público
+                    por meio do Github Pages.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
     <div class="offcanvas offcanvas-start text-bg-dark" data-bs-backdrop="static" tabindex="-1" id="offcanvasLeft"
         aria-labelledby="offcanvasLeftLabel">
         <div class="offcanvas-header">
@@ -55,10 +78,12 @@
             <ul>
                 <li><a>Currículo</a></li>
                 <ul>
-                    <li><a href="https://linkedin.com/in/pedro-torques" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="https://linkedin.com/in/pedro-torques" target="_blank"
+                            rel="noopener noreferrer">LinkedIn</a></li>
                     <li><a href="https://github.com/ptorques" target="_blank" rel="noopener noreferrer">Github</a></li>
                 </ul>
-                <li><a href="https://docs.google.com/spreadsheets/d/1wr1-1DK-d0wzwD2kDb_0jL8M5r4iqI-EWCJJHN9FspY/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Cronograma</a></li>
+                <li><a href="https://docs.google.com/spreadsheets/d/1wr1-1DK-d0wzwD2kDb_0jL8M5r4iqI-EWCJJHN9FspY/edit?usp=sharing"
+                        target="_blank" rel="noopener noreferrer">Cronograma</a></li>
                 <li><a>Unidades de conhecimento</a></li>
                 <ul>
                     <li><a href="./humanas.html">Humanas</a></li>
@@ -67,8 +92,10 @@
                     <li><a href="./natureza.html">Natureza</a></li>
                     <li><a href="./tecnico.html">Técnico</a></li>
                 </ul>
-                <li><a href="https://sites.google.com/estudante.sesisenai.org.br/portflio-pedro-torques/início?authuser=0" target="_blank" rel="noopener noreferrer">Portfólio de 2021</a></li>
-                <li><a href="https://pedrotorques.netlify.app" target="_blank" rel="noopener noreferrer">Portfólio de 2022</a></li>
+                <li><a href="https://sites.google.com/estudante.sesisenai.org.br/portflio-pedro-torques/início?authuser=0"
+                        target="_blank" rel="noopener noreferrer">Portfólio de 2021</a></li>
+                <li><a href="https://pedrotorques.netlify.app" target="_blank" rel="noopener noreferrer">Portfólio de
+                        2022</a></li>
             </ul>
         </div>
     </div>
@@ -83,10 +110,11 @@
         <div class="offcanvas-body">
             <div class="container justify-content-center">
                 <img id="self" src="./assets/images/Imagepipe_15.jpg">
-                <p id="texto_apresentacao">Olá, meu nome é Pedro Luís Rickli Torques, tenho 16 anos, nasci em Curitiba e
+                <p class="texto_apresentacao">Olá, meu nome é Pedro Luís Rickli Torques, tenho 17 anos, nasci em Curitiba e
                     atualmente moro em Florianópolis. Sou um aluno do 3º ano A do ensino médio com curso integrado de
                     Desenvolvimento de Sistemas do SESI/SENAI de Florianópolis. Planejo seguir carreira na área de TI,
-                    especificamente cibersegurança. Gosto de ler, escrever e ouvir música.</p>
+                    especificamente cibersegurança. Gosto de ler, escrever e ouvir música.
+                </p>
             </div>
         </div>
     </div>
